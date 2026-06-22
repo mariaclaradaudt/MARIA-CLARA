@@ -21,10 +21,13 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: rgb(43, 43, 173);
+    background-color: rgb(215, 215, 221);
 }
 main{
     flex: 1;
+    displey:flex;
+    fles-direction: :column;
+    alingn-items:center
 }
 .cabecalho-link{
     color: aliceblue;
@@ -45,4 +48,7 @@ footer{
 .cartao-frente, .cartao-verso{
     position: absolute;
     border-radius: 12px;
+}
+.cartao:hover .cartao-interno{
+    transform: rotateY(180deg);
 }
