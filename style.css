@@ -1,14 +1,13 @@
 *{
-
     margin: 0;
-    padding:0;
+    padding: 0;
 }
 .cabecalho{
     padding: 15px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(165, 211, 233);
+    background-color: rgb(0, 0, 0);
 }
 .cartao {
     width: 260px;
@@ -26,8 +25,8 @@ body{
 main{
     flex: 1;
     displey:flex;
-    fles-direction: :column;
-    alingn-items:center
+    flex-direction:column;
+    align-items:center;
 }
 .cabecalho-link{
     color: aliceblue;
@@ -44,10 +43,14 @@ footer{
 }
 .cartao-interno{
     position: relative;
+    transition:transform 0.8s;
+    transform-style: preserve-3d;
 }
 .cartao-frente, .cartao-verso{
     position: absolute;
     border-radius: 12px;
+    box-shadow: 0 6px 12px rgb(red, green, blue);
+    backface-visibility:hidden;
 }
 .cartao:hover .cartao-interno{
     transform: rotateY(180deg);
